@@ -28,7 +28,7 @@ class EventPratice2 extends Component {
     return <div>
       <h1>이벤트 연습</h1>
       <input type="text" name="message" placeholder="write anything" value={this.state.message} onChange={this.handleChange}/>
-      <button onClick={this.handleChange}>확인</button>
+      <button onClick={this.handleClick}>확인</button>
     </div>;
   }
 }

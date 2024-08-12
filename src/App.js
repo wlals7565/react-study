@@ -1,13 +1,13 @@
 import "./App.css";
 import { Component } from "react";
-import EventPratice from "./4장/EventPractice1";
+import EventPratice3 from "./4장/EventPractice3";
 
 class App extends Component {
   render() {
       return (
-        <EventPratice>
+        <EventPratice3>
 
-        </EventPratice>
+        </EventPratice3>
       )
   }
 }
