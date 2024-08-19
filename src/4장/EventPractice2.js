@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class EventPratice2 extends Component {
+class EventPractice2 extends Component {
   state = {
     message: ''
   }
@@ -33,4 +33,4 @@ class EventPratice2 extends Component {
   }
 }
 
-export default EventPratice2;
+export default EventPractice2;

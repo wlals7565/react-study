@@ -2,8 +2,8 @@ import { Component } from "react";
 
 class EventPractice3 extends Component {
   state = {
-    username: '',
-    message: '',
+    username: "",
+    message: "",
   };
 
   handleChange = (e) => {
@@ -12,12 +12,23 @@ class EventPractice3 extends Component {
     });
   };
 
-  handleClick= () => {
-    alert(this.state.message);
+  handleClick = () => {
+    alert(this.state.message+ ': ' + this.state.username);
     this.setState({
       message: "",
+      username: '',
     });
-  }
+  };
+
+  handleEnterPress = (e) => {
+    if (e.key === "Enter") {
+      alert(this.state.message+ ': ' + this.state.username);
+      this.setState({
+        message: "",
+        username: '',
+      });
+    }
+  };
 
   render() {
     return (
@@ -29,15 +40,18 @@ class EventPractice3 extends Component {
           placeholder="write anything"
           value={this.state.message}
           onChange={this.handleChange}
-        /> 
+        />
         <input
           type="text"
           name="username"
           placeholder="write your name"
           value={this.state.username}
           onChange={this.handleChange}
+          onKeyDown={this.handleEnterPress}
         />
-        <button onClick={this.handleClick}>확인</button>
+        <button onClick={this.handleClick}>
+          확인
+        </button>
       </div>
     );
   }

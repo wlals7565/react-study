@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class EventPratice0 extends Component {
+class EventPractice0 extends Component {
   render() {
     return <div>
       <h1>이벤트 연습</h1>
@@ -9,4 +9,4 @@ class EventPratice0 extends Component {
   }
 }
 
-export default EventPratice0;
+export default EventPractice0;
