@@ -16,3 +16,5 @@ class RefSampel extends Component {
     )
   }
 }
+
+export default RefSampel;
