@@ -17,7 +17,6 @@ const Accordian = () => {
   }
   }
   
-  console.log(selected)
   return (
     <div className="wrapper">
       <button onClick={() =>{SetenableMultiSelection(!enableMultiSelection)}}>Enable multiple button selection</button>
