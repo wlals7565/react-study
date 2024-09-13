@@ -1,4 +1,4 @@
-import App11 from "./11장/App11";
+import App11 from "./11장/App11-2";
 /*
 import ImageSlider from "./image-slider/index";
 import Accordian from "./accordian";
