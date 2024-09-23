@@ -1,4 +1,4 @@
-import App12 from "./12장/App12-immer-func";
+import App13 from "./13장/App";
 /*
 import ImageSlider from "./image-slider/index";
 import Accordian from "./accordian";
@@ -12,7 +12,7 @@ import menus from "./tree-view/data";
 const App = () => {
   return (
   <div className="App">
-  {<App12 />}
+  {<App13 />}
   {/*25 프로젝트 용*/}
   {/*<Accordian/>*/}
   {/*<TreeView menus={menus}/>*/}
