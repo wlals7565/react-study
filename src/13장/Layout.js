@@ -9,7 +9,7 @@ const Layout = () => {
   } 
 
   const goArticles = () => {
-    navigate('/articles')
+    navigate('/articles', { replace: true})
   }
 
   return (
