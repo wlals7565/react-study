@@ -12,11 +12,11 @@ const categories = [
   'technology',
 ];
 
-const Categories = () => {
+const Categories = ({category, onSelect}) => {
   return (
     <div className="category-container">
-      {categories.map((category) => (
-        <div key={category} className="category">{category}</div>
+      {categories.map((c) => (
+        <div key={c} className={category===c ? "selected-category category": "category" } onClick={()=>onSelect(c)}>{c}</div>
       ))}
     </div>
   );
