@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/category.style.scss'
+import '../styles/category.style.scss';
+import { NavLink } from '../../../node_modules/react-router-dom/dist/index';
 
 const categories = [
   'all',
@@ -12,7 +13,24 @@ const categories = [
   'technology',
 ];
 
-const Categories = ({category, onSelect}) => {
+const Categories = () => {
+  return (
+    <div className="category-container">
+      {categories.map((c) => (
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? 'category active' : 'category'
+          }
+          key={c}
+          to={c === 'all' ? '/' : `/${c}`}
+        >
+          {c}
+        </NavLink>
+      ))}
+    </div>
+  );
+};
+  /*
   return (
     <div className="category-container">
       {categories.map((c) => (
@@ -20,7 +38,8 @@ const Categories = ({category, onSelect}) => {
       ))}
     </div>
   );
-};
+  */
+
 
 export default Categories;
 
