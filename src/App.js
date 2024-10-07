@@ -1,8 +1,8 @@
-import App14 from "./14장/App14";
+import App15 from "./15장/App";
+/*
 import LightDarkMode from "./light-and-dark-mode/index";
 import LoadMoreData from "./load-more-button/index";
 import QRCodeGnenrator from "./qr-code-generator/index";
-/*
 import ImageSlider from "./image-slider/index";
 import Accordian from "./accordian";
 import RandomColor from "./random-color/index";
@@ -15,7 +15,7 @@ import menus from "./tree-view/data";
 const App = () => {
   return (
   <div className="App">
-  {<App14 />}
+  {<App15 />}
   {/*25 프로젝트 용*/}
   {/*<Accordian/>*/}
   {/*<TreeView menus={menus}/>*/}
