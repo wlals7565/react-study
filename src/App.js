@@ -1,4 +1,4 @@
-import App15 from "./15장/App";
+import App17 from "./17장/App";
 /*
 import LightDarkMode from "./light-and-dark-mode/index";
 import LoadMoreData from "./load-more-button/index";
@@ -15,7 +15,7 @@ import menus from "./tree-view/data";
 const App = () => {
   return (
   <div className="App">
-  {<App15 />}
+  {<App17 />}
   {/*25 프로젝트 용*/}
   {/*<Accordian/>*/}
   {/*<TreeView menus={menus}/>*/}
